@@ -1,0 +1,7 @@
+{
+    "name": "CodeceptAppiumTest",
+    "dependencies": {
+        "codeceptjs": "^2.4.3",
+        "webdriverio": "^5.18.6"
+    }
+}

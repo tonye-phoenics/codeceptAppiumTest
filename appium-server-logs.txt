@@ -1,0 +1,990 @@
+﻿[info] [35m[Appium][39m Welcome to Appium v1.15.1
+[info] [35m[Appium][39m Non-default server args:
+[info] [35m[Appium][39m   allowInsecure: {
+[info] [35m[Appium][39m   }
+[info] [35m[Appium][39m   denyInsecure: {
+[info] [35m[Appium][39m   }
+[info] [35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:4723[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[info] [35m[HTTP][39m [90m{"capabilities":{"alwaysMatch":{"appPackage":"com.google.android.calculator","appActivity":"com.android.calculator2.Calculator","deviceName":"emulator","platformVersion":"10","platformName":"Android"},"firstMatch":[{}]},"desiredCapabilities":{"appPackage":"com.google.android.calculator","appActivity":"com.android.calculator2.Calculator","deviceName":"emulator","platformVersion":"10","platformName":"Android"}}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.createSession() with args: [{"appPackage":"com.google.android.calculator","appActivity":"com.android.calculator2.Calculator","deviceName":"emulator","platformVersion":"10","platformName":"Android"},null,{"alwaysMatch":{"appPackage":"com.google.android.calculator","appActivity":"com.android.calculator2.Calculator","deviceName":"emulator","platformVersion":"10","platformName":"Android"},"firstMatch":[{}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1580288850177 (10:07:30 GMT+0100 (Mitteleuropäische Zeit))
+[warn] [35m[BaseDriver][39m The capabilities ["appPackage","appActivity","deviceName","platformVersion"] are not standard capabilities and should have an extension prefix
+[warn] [35m[Appium][39m 
+[warn] [35m[Appium][39m ======================================================================
+[warn] [35m[Appium][39m   DEPRECATION WARNING:
+[warn] [35m[Appium][39m 
+[warn] [35m[Appium][39m   The 'automationName' capability was not provided in the desired 
+[warn] [35m[Appium][39m   capabilities for this Android session
+[warn] [35m[Appium][39m 
+[warn] [35m[Appium][39m   Setting 'automationName=UiAutomator2' by default and using the 
+[warn] [35m[Appium][39m   UiAutomator2 Driver
+[warn] [35m[Appium][39m 
+[warn] [35m[Appium][39m   The next major version of Appium (2.x) will **require** the 
+[warn] [35m[Appium][39m   'automationName' capability to be set for all sessions on all 
+[warn] [35m[Appium][39m   platforms
+[warn] [35m[Appium][39m 
+[warn] [35m[Appium][39m   In previous versions (Appium <= 1.13.x), the default was 
+[warn] [35m[Appium][39m   'automationName=UiAutomator1'
+[warn] [35m[Appium][39m 
+[warn] [35m[Appium][39m   If you wish to use that automation instead of UiAutomator2, please 
+[warn] [35m[Appium][39m   add 'automationName=UiAutomator1' to your desired capabilities
+[warn] [35m[Appium][39m 
+[warn] [35m[Appium][39m   For more information about drivers, please visit 
+[warn] [35m[Appium][39m   http://appium.io/docs/en/about-appium/intro/ and explore the 
+[warn] [35m[Appium][39m   'Drivers' menu
+[warn] [35m[Appium][39m 
+[warn] [35m[Appium][39m ======================================================================
+[warn] [35m[Appium][39m 
+[info] [35m[Appium][39m Appium v1.15.1 creating new AndroidUiautomator2Driver (v1.37.2) session
+[debug] [35m[BaseDriver][39m W3C capabilities and MJSONWP desired capabilities were provided
+[debug] [35m[BaseDriver][39m Creating session with W3C capabilities: {
+[debug] [35m[BaseDriver][39m   "alwaysMatch": {
+[debug] [35m[BaseDriver][39m     "appium:appPackage": "com.google.android.calculator",
+[debug] [35m[BaseDriver][39m     "appium:appActivity": "com.android.calculator2.Calculator",
+[debug] [35m[BaseDriver][39m     "appium:deviceName": "emulator",
+[debug] [35m[BaseDriver][39m     "appium:platformVersion": "10",
+[debug] [35m[BaseDriver][39m     "platformName": "Android"
+[debug] [35m[BaseDriver][39m   },
+[debug] [35m[BaseDriver][39m   "firstMatch": [
+[debug] [35m[BaseDriver][39m     {}
+[debug] [35m[BaseDriver][39m   ]
+[debug] [35m[BaseDriver][39m }
+[info] [35m[BaseDriver][39m Session created with session id: 31c57fe0-8312-4e29-8ec0-35943257321e
+[info] [35m[UiAutomator2][39m Starting 'com.google.android.calculator' directly on the device[info] [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\u48tog\AppData\Local\Android\android-sdk' (newest first):
+[info] [35m[ADB][39m     C:/Users/u48tog/AppData/Local/Android/android-sdk/build-tools/29.0.2
+[info] [35m[ADB][39m Using 'adb.exe' from 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe'
+[info] [35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...[debug] [35m[ADB][39m Connected devices: [{"udid":"emulator-5554","state":"device"}]
+[info] [35m[AndroidDriver][39m Looking for a device with Android '10'
+[debug] [35m[ADB][39m Setting device id to emulator-5554
+[info] [35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 10
+[info] [35m[AndroidDriver][39m Using device: emulator-5554
+[info] [35m[ADB][39m Using 'adb.exe' from 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe'
+[debug] [35m[ADB][39m Setting device id to emulator-5554
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 29
+[debug] [35m[ADB][39m Device API level: 29
+[warn] [35m[UiAutomator2][39m Relaxing hidden api policy
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell settings put global hidden_api_policy_pre_p_apps 1'
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell settings put global hidden_api_policy_p_apps 1'[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell settings put global hidden_api_policy 1'
+[warn] [35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 wait-for-device'[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'[debug] [35m[ADB][39m 'io.appium.settings' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+[info] [35m[ADB][39m Cannot extract apk info using apkanalyzer. Falling back to aapt. Original error: Could not find 'apkanalyzer.bat' in ["C:\\Users\\u48tog\\AppData\\Local\\Android\\android-sdk\\platform-tools\\apkanalyzer.bat","C:\\Users\\u48tog\\AppData\\Local\\Android\\android-sdk\\emulator\\apkanalyzer.bat","C:\\Users\\u48tog\\AppData\\Local\\Android\\android-sdk\\tools\\apkanalyzer.bat","C:\\Users\\u48tog\\AppData\\Local\\Android\\android-sdk\\tools\\bin\\apkanalyzer.bat","C:\\Users\\u48tog\\AppData\\Local\\Android\\android-sdk\\build-tools\\29.0.2\\apkanalyzer.bat"]. Do you have Android Build Tools installed at 'C:\Users\u48tog\AppData\Local\Android\android-sdk'?
+[info] [35m[ADB][39m Using 'aapt.exe' from 'C:\Users\u48tog\AppData\Local\Android\android-sdk\build-tools\29.0.2\aapt.exe'[debug] [35m[ADB][39m The version code of the installed 'io.appium.settings' is greater than the application version code (20 > 19)
+[debug] [35m[ADB][39m There is no need to downgrade 'io.appium.settings'
+[debug] [35m[ADB][39m Getting IDs of all 'io.appium.settings' processes
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'pgrep --help; echo $?''[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pgrep -f io\\.appium\\.settings'
+[debug] [35m[AndroidDriver][39m io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell appops set io.appium.settings android\:mock_location allow'[debug] [35m[Logcat][39m Starting logcat capture[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m 'io.appium.uiautomator2.server' is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'[info] [35m[ADB][39m Cannot extract apk info using apkanalyzer. Falling back to aapt. Original error: Could not find 'apkanalyzer.bat' in ["C:\\Users\\u48tog\\AppData\\Local\\Android\\android-sdk\\platform-tools\\apkanalyzer.bat","C:\\Users\\u48tog\\AppData\\Local\\Android\\android-sdk\\emulator\\apkanalyzer.bat","C:\\Users\\u48tog\\AppData\\Local\\Android\\android-sdk\\tools\\apkanalyzer.bat","C:\\Users\\u48tog\\AppData\\Local\\Android\\android-sdk\\tools\\bin\\apkanalyzer.bat","C:\\Users\\u48tog\\AppData\\Local\\Android\\android-sdk\\build-tools\\29.0.2\\apkanalyzer.bat"]. Do you have Android Build Tools installed at 'C:\Users\u48tog\AppData\Local\Android\android-sdk'?
+[debug] [35m[ADB][39m The version code of the installed 'io.appium.uiautomator2.server' is greater than the application version code (45 > 41)
+[debug] [35m[UiAutomator2][39m io.appium.uiautomator2.server installation state: newerVersionInstalled
+[debug] [35m[ADB][39m Checking app cert for C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.3.0.apk
+[info] [35m[ADB][39m Using 'apksigner.bat' from 'C:\Users\u48tog\AppData\Local\Android\android-sdk\build-tools\29.0.2\apksigner.bat'
+[debug] [35m[ADB][39m Starting 'C:\Users\u48tog\AppData\Local\Android\android-sdk\build-tools\29.0.2\apksigner.bat' with args '["verify","--print-certs","C:\\Users\\u48tog\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v4.3.0.apk"]'[debug] [35m[ADB][39m apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+[debug] [35m[ADB][39m Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+[debug] [35m[ADB][39m Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+[debug] [35m[ADB][39m Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+[debug] [35m[ADB][39m 
+[debug] [35m[ADB][39m 'C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.3.0.apk' is already signed.
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m 'io.appium.uiautomator2.server.test' is installed
+[debug] [35m[ADB][39m Checking app cert for C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+[debug] [35m[ADB][39m Starting 'C:\Users\u48tog\AppData\Local\Android\android-sdk\build-tools\29.0.2\apksigner.bat' with args '["verify","--print-certs","C:\\Users\\u48tog\\AppData\\Local\\Programs\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk"]'[debug] [35m[ADB][39m apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+[debug] [35m[ADB][39m Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+[debug] [35m[ADB][39m Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+[debug] [35m[ADB][39m Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+[debug] [35m[ADB][39m 
+[debug] [35m[ADB][39m 'C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is already signed.
+[info] [35m[UiAutomator2][39m Server packages are going to be (re)installed
+[info] [35m[UiAutomator2][39m Full packages reinstall is going to be performed
+[debug] [35m[ADB][39m Uninstalling io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m 'io.appium.uiautomator2.server' is installed
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server'[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 uninstall io.appium.uiautomator2.server'[debug] [35m[ADB][39m 'adb uninstall io.appium.uiautomator2.server' command output: Success
+[info] [35m[ADB][39m io.appium.uiautomator2.server was successfully uninstalled
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'ls -t -1 /data/local/tmp/appium_cache 2>&1 || echo _ERROR_''[debug] [35m[ADB][39m The count of applications in the cache: 6
+[info] [35m[ADB][39m The application at 'C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.3.0.apk' is already cached to '/data/local/tmp/appium_cache/0cc1725a60a05dbb5d0d09256f2fc6ece7e3b10f.apk'
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm install -r /data/local/tmp/appium_cache/0cc1725a60a05dbb5d0d09256f2fc6ece7e3b10f.apk'[info] [35m[ADB][39m The installation of 'appium-uiautomator2-server-v4.3.0.apk' took 0.535s
+[debug] [35m[ADB][39m Install command stdout: Success
+[debug] [35m[ADB][39m Uninstalling io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server.test'[debug] [35m[ADB][39m 'io.appium.uiautomator2.server.test' is installed
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 uninstall io.appium.uiautomator2.server.test'[debug] [35m[ADB][39m 'adb uninstall io.appium.uiautomator2.server.test' command output: Success
+[info] [35m[ADB][39m io.appium.uiautomator2.server.test was successfully uninstalled
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell 'ls -t -1 /data/local/tmp/appium_cache 2>&1 || echo _ERROR_''[debug] [35m[ADB][39m The count of applications in the cache: 6
+[info] [35m[ADB][39m The application at 'C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is already cached to '/data/local/tmp/appium_cache/cd247f042368990c9f33b2d7bf2390d8cf4f4e24.apk'
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm install -r /data/local/tmp/appium_cache/cd247f042368990c9f33b2d7bf2390d8cf4f4e24.apk'[info] [35m[ADB][39m The installation of 'appium-uiautomator2-server-debug-androidTest.apk' took 0.392s
+[debug] [35m[ADB][39m Install command stdout: Success
+[debug] [35m[UiAutomator2][39m Waiting up to 30000ms for services to be available
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm list instrumentation'[debug] [35m[UiAutomator2][39m Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+[debug] [35m[UiAutomator2][39m Forwarding UiAutomator2 Server port 6790 to 8201
+[debug] [35m[ADB][39m Forwarding system: 8201 to device: 6790
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward tcp\:8201 tcp\:6790'
+[debug] [35m[UiAutomator2][39m No app capability. Assuming it is already on the device
+[debug] [35m[ADB][39m Getting install status for com.google.android.calculator
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys package com.google.android.calculator'[debug] [35m[ADB][39m 'com.google.android.calculator' is installed
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.google.android.calculator'
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell pm clear com.google.android.calculator'[debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.google.android.calculator' application (stop and clear)
+[debug] [35m[UiAutomator2][39m Performing shallow cleanup of automation leftovers
+[debug] [35m[UiAutomator2][39m No obsolete sessions have been detected (Error: socket hang up)
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'[info] [35m[UiAutomator2][39m Starting UIAutomator2 server 4.3.0
+[info] [35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.3.0.apk' and test from 'C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[info] [35m[UiAutomator2][39m Waiting up to 30000ms for UiAutomator2 to be online...
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","emulator-5554","shell","am","instrument","-w","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"][debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body
+[info] [35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}
+[debug] [35m[Instrumentation][39m io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body
+[info] [35m[WD Proxy][39m Got an unexpected response with status undefined: {"code":"ECONNRESET"}[debug] [35m[WD Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[WD Proxy][39m Proxying [GET /status] to [GET http://localhost:8201/wd/hub/status] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"None","value":{"ready":true,"message":"UiAutomator2 Server is ready to accept commands"}}
+[debug] [35m[UiAutomator2][39m The initialization of the instrumentation process took 3101ms
+[debug] [35m[WD Proxy][39m Matched '/session' to command name 'createSession'
+[debug] [35m[WD Proxy][39m Proxying [POST /session] to [POST http://localhost:8201/wd/hub/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","appPackage":"com.google.android.calculator","appActivity":"com.android.calculator2.Calculator","deviceName":"emulator","platformVersion":"10"},"platformName":"Android","appPackage":"com.google.android.calculator","appActivity":"com.android.calculator2.Calculator","deviceName":"emulator-5554","platformVersion":"10","deviceUDID":"emulator-5554"}],"alwaysMatch":{}}}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":{"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","appPackage":"com.google.android.calculator","appActivity":"com.android.calculator2.Calculator","deviceName":"emulator","platformVersion":"10"},"platformName":"Android","appPackage":"com.google.android.calculator","appActivity":"com.android.calculator2.Calculator","deviceName":"emulator-5554","platformVersion":"10","deviceUDID":"emulator-5554"}],"alwaysMatch":{}}}}
+[info] [35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
+[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/info] to [GET http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/appium/device/info] with no body[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":{"androidId":"e110ef027c9098c8","manufacturer":"Google","model":"Android SDK built for x86","brand":"google","apiVersion":"29","platformVersion":"10","carrierName":"Android","realDisplaySize":"1440x2560","displayDensity":560,"networks":[{"type":0,"typeName":"MOBILE","subtype":13,"subtypeName":"LTE","isConnected":true,"detailedState":"CONNECTED","state":"CONNECTED","extraInfo":"epc.tmobile.com","isAvailable":true,"isFailover":false,"isRoaming":false,"capabilities":{"transportTypes":"NET_CAPABILITY_MMS","networkCapabilities":"","linkUpstreamBandwidthKbps":51200,"linkDownBandwidthKbps":102400,"signalStrength":-2147483648,"networkSpecifier":"1","SSID":null}},{"type":1,"typeName":"WIFI","subtype":0,"subtypeName":"","isConnected":true,"detailedState":"CONNECTED","state":"CONNECTED","extraInfo":null,"isAvailable":true,"isFailover":false,"isRoaming":false,"capabilities":{"transportTypes":"NET_CAPABILITY_SUPL","networkCapabilities":"","linkUpstreamBandwidt...
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell dumpsys window'
+[info] [35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[info] [35m[UiAutomator2][39m Starting 'com.google.android.calculator/com.android.calculator2.Calculator and waiting for 'com.google.android.calculator/com.android.calculator2.Calculator'
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am start -W -n com.google.android.calculator/com.android.calculator2.Calculator -S'[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/appium/device/pixel_ratio] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":3.5}
+[debug] [35m[WD Proxy][39m Matched '/appium/device/system_bars' to command name 'getSystemBars'
+[debug] [35m[WD Proxy][39m Proxying [GET /appium/device/system_bars] to [GET http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/appium/device/system_bars] with body: {}[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":{"statusBar":84}}
+[debug] [35m[WD Proxy][39m Matched '/window/current/size' to command name 'getWindowSize'
+[debug] [35m[WD Proxy][39m Proxying [GET /window/current/size] to [GET http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/window/current/size] with body: {}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":{"height":2392,"width":1440}}
+[info] [35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 31c57fe0-8312-4e29-8ec0-35943257321e added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1580288864547 (10:07:44 GMT+0100 (Mitteleuropäische Zeit))
+[debug] [35m[W3C (31c57fe0)][39m Cached the protocol value 'W3C' for the new session 31c57fe0-8312-4e29-8ec0-35943257321e
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","appPackage":"com.google.android.calculator","appActivity":"com.android.calculator2.Calculator","deviceName":"emulator","platformVersion":"10"},"platformName":"Android","appPackage":"com.google.android.calculator","appActivity":"com.android.calculator2.Calculator","deviceName":"emulator-5554","platformVersion":"10","deviceUDID":"emulator-5554","deviceApiLevel":29,"deviceScreenSize":"1440x2560","deviceScreenDensity":560,"deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","pixelRatio":3.5,"statBarHeight":84,"viewportRect":{"left":0,"top":84,"width":1440,"height":2308}}}
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m14376 ms - 902[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath",".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']","context":"","multiple":true}[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m1174 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelecto[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath",".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelector().text(\"DEG\")']/@id ]","31c57fe0-...
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelector().text(\"DEG\...[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m1328 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":"./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath","./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":"./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]","context":"","multiple":true}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m109 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().text(\"DEG\")"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().text(\"DEG\")","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"DEG\")","context":"","multiple":true}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[{"ELEMENT":"5b4ad0b6-f653-4202-9dd0-02b1322fd39d","element-6066-11e4-a52e-4f735466cecf":"5b4ad0b6-f653-4202-9dd0-02b1322fd39d"}]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"5b4ad0b6-f653-4202-9dd0-02b1322fd39d","ELEMENT":"5b4ad0b6-f653-4202-9dd0-02b1322fd39d"}]
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m58 ms - 139[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"5b4ad0b6-f653-4202-9dd0-02b1322fd39d"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"5b4ad0b6-f653-4202-9dd0-02b1322fd39d"}[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m27 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"5b4ad0b6-f653-4202-9dd0-02b1322fd39d"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"5b4ad0b6-f653-4202-9dd0-02b1322fd39d"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m12 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"5b4ad0b6-f653-4202-9dd0-02b1322fd39d"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"5b4ad0b6-f653-4202-9dd0-02b1322fd39d"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m12 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"5b4ad0b6-f653-4202-9dd0-02b1322fd39d"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"5b4ad0b6-f653-4202-9dd0-02b1322fd39d"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m13 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath",".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']","context":"","multiple":true}[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m165 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelecto[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath",".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelector().text(\"DEG\")']/@id ]","31c57fe0-...
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelector().text(\"DEG\...[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m192 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":"./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath","./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":"./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]","context":"","multiple":true}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m123 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().text(\"DEG\")"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().text(\"DEG\")","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"DEG\")","context":"","multiple":true}[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[{"ELEMENT":"39d0f9fb-a514-4d6b-9162-3d4e1efa8ce2","element-6066-11e4-a52e-4f735466cecf":"39d0f9fb-a514-4d6b-9162-3d4e1efa8ce2"}]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"39d0f9fb-a514-4d6b-9162-3d4e1efa8ce2","ELEMENT":"39d0f9fb-a514-4d6b-9162-3d4e1efa8ce2"}]
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m69 ms - 139[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"39d0f9fb-a514-4d6b-9162-3d4e1efa8ce2"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"39d0f9fb-a514-4d6b-9162-3d4e1efa8ce2"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m16 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"39d0f9fb-a514-4d6b-9162-3d4e1efa8ce2"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"39d0f9fb-a514-4d6b-9162-3d4e1efa8ce2"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m11 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"39d0f9fb-a514-4d6b-9162-3d4e1efa8ce2"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"39d0f9fb-a514-4d6b-9162-3d4e1efa8ce2"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m11 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"39d0f9fb-a514-4d6b-9162-3d4e1efa8ce2"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"39d0f9fb-a514-4d6b-9162-3d4e1efa8ce2"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m10 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath",".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']","context":"","multiple":true}[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m117 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelecto[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath",".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelector().text(\"DEG\")']/@id ]","31c57fe0-...
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelector().text(\"DEG\...
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m151 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":"./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath","./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":"./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]","context":"","multiple":true}[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m101 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().text(\"DEG\")"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().text(\"DEG\")","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"DEG\")","context":"","multiple":true}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[{"ELEMENT":"2dc6ac3b-57f0-46d4-8962-37fcb7b78d23","element-6066-11e4-a52e-4f735466cecf":"2dc6ac3b-57f0-46d4-8962-37fcb7b78d23"}]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"2dc6ac3b-57f0-46d4-8962-37fcb7b78d23","ELEMENT":"2dc6ac3b-57f0-46d4-8962-37fcb7b78d23"}]
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m45 ms - 139[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"2dc6ac3b-57f0-46d4-8962-37fcb7b78d23"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"2dc6ac3b-57f0-46d4-8962-37fcb7b78d23"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m13 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"2dc6ac3b-57f0-46d4-8962-37fcb7b78d23"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"2dc6ac3b-57f0-46d4-8962-37fcb7b78d23"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m10 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"2dc6ac3b-57f0-46d4-8962-37fcb7b78d23"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"2dc6ac3b-57f0-46d4-8962-37fcb7b78d23"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m10 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"2dc6ac3b-57f0-46d4-8962-37fcb7b78d23"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"2dc6ac3b-57f0-46d4-8962-37fcb7b78d23"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m10 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath",".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']","context":"","multiple":true}[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m87 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelecto[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath",".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelector().text(\"DEG\")']/@id ]","31c57fe0-...
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelector().text(\"DEG\...
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m167 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":"./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath","./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":"./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]","context":"","multiple":true}[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m134 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().text(\"DEG\")"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().text(\"DEG\")","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"DEG\")","context":"","multiple":true}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[{"ELEMENT":"c21bcd77-3b3a-439f-8c7b-110ec5e4e729","element-6066-11e4-a52e-4f735466cecf":"c21bcd77-3b3a-439f-8c7b-110ec5e4e729"}]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"c21bcd77-3b3a-439f-8c7b-110ec5e4e729","ELEMENT":"c21bcd77-3b3a-439f-8c7b-110ec5e4e729"}]
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m47 ms - 139[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"c21bcd77-3b3a-439f-8c7b-110ec5e4e729"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"c21bcd77-3b3a-439f-8c7b-110ec5e4e729"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m10 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"c21bcd77-3b3a-439f-8c7b-110ec5e4e729"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"c21bcd77-3b3a-439f-8c7b-110ec5e4e729"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m10 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"c21bcd77-3b3a-439f-8c7b-110ec5e4e729"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"c21bcd77-3b3a-439f-8c7b-110ec5e4e729"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m11 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"c21bcd77-3b3a-439f-8c7b-110ec5e4e729"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"c21bcd77-3b3a-439f-8c7b-110ec5e4e729"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m14 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath",".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']","context":"","multiple":true}[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m82 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelecto[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath",".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelector().text(\"DEG\")']/@id ]","31c57fe0-...
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelector().text(\"DEG\...
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m114 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":"./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath","./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":"./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]","context":"","multiple":true}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m75 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"-android uiautomator","value":"new UiSelector().text(\"DEG\")"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["-android uiautomator","new UiSelector().text(\"DEG\")","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().text(\"DEG\")","context":"","multiple":true}[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[{"ELEMENT":"5cf826c6-1624-4204-b321-7d65e768cf77","element-6066-11e4-a52e-4f735466cecf":"5cf826c6-1624-4204-b321-7d65e768cf77"}]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"5cf826c6-1624-4204-b321-7d65e768cf77","ELEMENT":"5cf826c6-1624-4204-b321-7d65e768cf77"}]
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m48 ms - 139[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"5cf826c6-1624-4204-b321-7d65e768cf77"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"5cf826c6-1624-4204-b321-7d65e768cf77"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m13 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"5cf826c6-1624-4204-b321-7d65e768cf77"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"5cf826c6-1624-4204-b321-7d65e768cf77"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m10 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"5cf826c6-1624-4204-b321-7d65e768cf77"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"5cf826c6-1624-4204-b321-7d65e768cf77"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m11 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"5cf826c6-1624-4204-b321-7d65e768cf77"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"5cf826c6-1624-4204-b321-7d65e768cf77"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m12 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath",".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":".//a[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//button[normalize-space(.)='android=new UiSelector().text(\"DEG\")'] | .//a/img[normalize-space(@alt)='android=new UiSelector().text(\"DEG\")']/ancestor::a | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][normalize-space(@value)='android=new UiSelector().text(\"DEG\")']","context":"","multiple":true}[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m89 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelecto[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath",".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelector().text(\"DEG\")']/@id ]","31c57fe0-...
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":".//a[./@href][((contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')) or .//img[contains(./@alt, 'android=new UiSelector().text(\"DEG\")')])] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][contains(./@value, 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'image'][contains(./@alt, 'android=new UiSelector().text(\"DEG\")')] | .//button[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//label[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")')] | .//input[./@type = 'submit' or ./@type = 'image' or ./@type = 'button'][./@name = 'android=new UiSelector().text(\"DEG\")'] | .//button[./@name = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-label = 'android=new UiSelector().text(\"DEG\")'] | .//*[@title = 'android=new UiSelector().text(\"DEG\")'] | .//*[@aria-labelledby = //*[@id][normalize-space(string(.)) = 'android=new UiSelector().text(\"DEG\...
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m103 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements[39m
+[info] [35m[HTTP][39m [90m{"using":"xpath","value":"./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]"}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.findElements() with args: ["xpath","./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]","31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[WD Proxy][39m Matched '/elements' to command name 'findElements'
+[debug] [35m[WD Proxy][39m Proxying [POST /elements] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/elements] with body: {"strategy":"xpath","selector":"./self::*[contains(normalize-space(string(.)), 'android=new UiSelector().text(\"DEG\")') or contains(normalize-space(@value), 'android=new UiSelector().text(\"DEG\")')]","context":"","multiple":true}
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: []
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m91 ms - 12[39m
+[info] [35m[HTTP][39m [90m[39m[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":[{"ELEMENT":"db272869-d779-47b8-8164-24467dda7144","element-6066-11e4-a52e-4f735466cecf":"db272869-d779-47b8-8164-24467dda7144"}]}
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"db272869-d779-47b8-8164-24467dda7144","ELEMENT":"db272869-d779-47b8-8164-24467dda7144"}]
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/elements [39m[32m200[39m [90m45 ms - 139[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"db272869-d779-47b8-8164-24467dda7144"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"db272869-d779-47b8-8164-24467dda7144"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m10 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"db272869-d779-47b8-8164-24467dda7144"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"db272869-d779-47b8-8164-24467dda7144"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m9 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"db272869-d779-47b8-8164-24467dda7144"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"db272869-d779-47b8-8164-24467dda7144"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m9 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click[39m
+[info] [35m[HTTP][39m [90m{"element":"db272869-d779-47b8-8164-24467dda7144"}[39m
+[info] [35m[W3C (31c57fe0)][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[WD Proxy][39m Matched '/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click' to command name 'click'
+[debug] [35m[WD Proxy][39m Proxying [POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click] to [POST http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48/touch/click] with body: {"element":"db272869-d779-47b8-8164-24467dda7144"}
+[warn] [35m[WD Proxy][39m 404 - undefined
+[debug] [35m[WD Proxy][39m StatusCodeError: 404 - undefined
+[debug] [35m[WD Proxy][39m     at new StatusCodeError (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\errors.js:32:15)
+[debug] [35m[WD Proxy][39m     at Request.plumbing.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:104:33)
+[debug] [35m[WD Proxy][39m     at Request.RP$callback [as _callback] (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request-promise-core\lib\plumbing.js:46:31)
+[debug] [35m[WD Proxy][39m     at Request.self.callback (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:185:22)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at Request.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1161:10)
+[debug] [35m[WD Proxy][39m     at Request.emit (events.js:182:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.<anonymous> (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\request\request.js:1083:12)
+[debug] [35m[WD Proxy][39m     at Object.onceWrapper (events.js:273:13)
+[debug] [35m[WD Proxy][39m     at IncomingMessage.emit (events.js:187:15)
+[debug] [35m[WD Proxy][39m     at endReadableNT (_stream_readable.js:1090:12)
+[debug] [35m[WD Proxy][39m     at process._tickCallback (internal/process/next_tick.js:63:19)
+[debug] [35m[W3C (31c57fe0)][39m Encountered internal error running command: Error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - undefined
+[debug] [35m[W3C (31c57fe0)][39m     at doJwpProxy (C:\Users\u48tog\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:490:13)
+[info] [35m[HTTP][39m [37m<-- POST /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e/touch/click [39m[31m500[39m [90m9 ms - 823[39m
+[info] [35m[HTTP][39m [90m[39m
+[info] [35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e[39m
+[info] [35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C (31c57fe0)][39m Calling AppiumDriver.deleteSession() with args: ["31c57fe0-8312-4e29-8ec0-35943257321e"]
+[debug] [35m[BaseDriver][39m Event 'quitSessionRequested' logged at 1580288874393 (10:07:54 GMT+0100 (Mitteleuropäische Zeit))
+[info] [35m[Appium][39m Removing session 31c57fe0-8312-4e29-8ec0-35943257321e from our master session list
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session
+[debug] [35m[WD Proxy][39m Matched '/' to command name 'deleteSession'
+[debug] [35m[WD Proxy][39m Proxying [DELETE /] to [DELETE http://localhost:8201/wd/hub/session/15bea957-a082-48f3-849b-a406666f2b48] with no body
+[debug] [35m[WD Proxy][39m Got response with status 200: {"sessionId":"15bea957-a082-48f3-849b-a406666f2b48","value":null}
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell am force-stop com.google.android.calculator'[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Removing forwarded port socket connection: 8201 
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 forward --remove tcp\:8201'
+[info] [35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
+[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell settings delete global hidden_api_policy_pre_p_apps'[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell settings delete global hidden_api_policy_p_apps'[debug] [35m[ADB][39m Running 'C:\Users\u48tog\AppData\Local\Android\android-sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell settings delete global hidden_api_policy'
+[debug] [35m[Instrumentation][39m .[debug] [35m[BaseDriver][39m Event 'quitSessionFinished' logged at 1580288875328 (10:07:55 GMT+0100 (Mitteleuropäische Zeit))
+[debug] [35m[W3C (31c57fe0)][39m Received response: null
+[debug] [35m[W3C (31c57fe0)][39m But deleting session, so not returning
+[debug] [35m[W3C (31c57fe0)][39m Responding to client with driver.deleteSession() result: null
+[info] [35m[HTTP][39m [37m<-- DELETE /wd/hub/session/31c57fe0-8312-4e29-8ec0-35943257321e [39m[32m200[39m [90m936 ms - 14[39m
+[info] [35m[HTTP][39m [90m[39m
+[debug] [35m[Instrumentation][39m Time: 14.059
+[debug] [35m[Instrumentation][39m 
+[debug] [35m[Instrumentation][39m OK (1 test)[debug] [35m[Instrumentation][39m The process has exited with code 0
